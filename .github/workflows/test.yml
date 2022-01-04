@@ -5,6 +5,7 @@ on: push
 jobs:
   lint:
     needs: lint
+    runs-on: ubuntu-latest
     steps:
       - name: Test Job
         run: "true"
