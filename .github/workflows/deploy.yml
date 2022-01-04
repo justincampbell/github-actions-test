@@ -1,5 +1,7 @@
 name: Deploy Workflow
 
+on: push
+
 jobs:
   lint:
     needs: [lint, test]

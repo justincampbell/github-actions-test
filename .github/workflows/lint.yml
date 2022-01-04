@@ -1,5 +1,7 @@
 name: Lint Workflow
 
+on: push
+
 jobs:
   lint:
     steps:
