@@ -1,0 +1,8 @@
+name: Deploy Workflow
+
+jobs:
+  lint:
+    needs: [lint, test]
+    steps:
+      - name: Deploy Job
+        run: "true"

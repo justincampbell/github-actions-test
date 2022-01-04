@@ -1,0 +1,8 @@
+name: Test Workflow
+
+jobs:
+  lint:
+    needs: lint
+    steps:
+      - name: Test Job
+        run: "true"

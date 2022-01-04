@@ -1,0 +1,7 @@
+name: Lint Workflow
+
+jobs:
+  lint:
+    steps:
+      - name: Lint Job
+        run: "true"
