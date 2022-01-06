@@ -1,11 +1,10 @@
-name: Test Workflow
+name: Test
 
-on: push
+on: workflow_call
 
 jobs:
   lint:
-    needs: lint
     runs-on: ubuntu-latest
     steps:
-      - name: Test Job
+      - name: Test Workflow
         run: "true"
