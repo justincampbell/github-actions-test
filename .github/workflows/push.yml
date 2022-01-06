@@ -6,8 +6,12 @@ jobs:
   lint:
     name: "Lint"
     uses: justincampbell/github-actions-test/.github/workflows/lint.yml@main
+  test:
+    name: "Test"
+    uses: justincampbell/github-actions-test/.github/workflows/test.yml@main
   deploy:
-    needs: lint
+    name: "Deploy"
+    needs: [lint, test]
     runs-on: ubuntu-latest
     steps:
       - name: Deploy Job

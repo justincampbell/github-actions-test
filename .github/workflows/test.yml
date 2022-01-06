@@ -1,0 +1,8 @@
+on: workflow_call
+
+jobs:
+  unit:
+    name: "Unit Tests"
+    runs-on: ubuntu-latest
+    steps:
+      - run: "true"
